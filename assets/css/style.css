@@ -7,7 +7,36 @@
   box-sizing: border-box;
 }
 
-body {
+.show-hide-container {
+  display: flex;
+  justify-content: center;
+}
+
+.show-hide-container > a {
+  color: #fff;
+  text-align: center;
+  font-family: "Digital-7";
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 3rem;
+  width: 100px;
+}
+
+.show-hide-container > a:hover:first-child {
+  transform: scale(1.1);
+  background-color: green;
+}
+
+.show-hide-container > a:hover:last-child {
+  transform: scale(1.1);
+  background-color: red;
+}
+
+section {
   display: flex;
   justify-content: center;
 }

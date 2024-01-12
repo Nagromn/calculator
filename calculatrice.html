@@ -7,38 +7,44 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <div class="result-container">
-        <div class="result-number">
-          <p id="result"></p>
-        </div>
-      </div>
-      <form action="">
-        <div class="buttons-container">
-          <div class="buttons-numbers" id="numbers">
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-          </div>
-          <div class="buttons-operator" id="operator">
-            <button type="button" value="+">+</button>
-            <button type="button" value="-">-</button>
-            <button type="button" value="*">x</button>
-            <button type="button" value="/">/</button>
-            <button type="button" id="clear">C</button>
-          </div>
-          <div class="submit-button" id="submit">
-            <button type="submit" value="=">=</button>
-          </div>
-        </div>
-      </form>
+    <div class="show-hide-container">
+      <a id="show" href="" title="Cliquez pour activer">On</a>
+      <a id="hide" href="" title="Cliquez pour désactiver">Off</a>
     </div>
+    <section>
+      <div class="calculator" id="calculator">
+        <div class="result-container">
+          <div class="result-number">
+            <p id="result"></p>
+          </div>
+        </div>
+        <form action="">
+          <div class="buttons-container">
+            <div class="buttons-numbers" id="numbers">
+              <button type="button" value="1">1</button>
+              <button type="button" value="2">2</button>
+              <button type="button" value="3">3</button>
+              <button type="button" value="4">4</button>
+              <button type="button" value="5">5</button>
+              <button type="button" value="6">6</button>
+              <button type="button" value="7">7</button>
+              <button type="button" value="8">8</button>
+              <button type="button" value="9">9</button>
+            </div>
+            <div class="buttons-operator" id="operator">
+              <button type="button" value="+" title="Addition">+</button>
+              <button type="button" value="-" title="Soustraction">-</button>
+              <button type="button" value="*" title="Multiplication">x</button>
+              <button type="button" value="/" title="Division">/</button>
+              <button type="button" id="clear" title="Effacer">C</button>
+            </div>
+            <div class="submit-button" id="submit">
+              <button type="submit" value="=" title="Résultat">=</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
